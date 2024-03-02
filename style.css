@@ -1,0 +1,145 @@
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Karla', sans-serif;
+	background-color: gray;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.container {
+	width: 50%;
+	height: 45%;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.35);
+	border-radius: 7px;
+	overflow: hidden;
+}
+
+.first-div h2 {
+	margin-bottom: 20px;
+	color: hsl(179, 62%, 43%);
+}
+
+.first-div h4 {
+	color: hsl(71, 73%, 54%);
+	margin-bottom: 10px;
+}
+
+.first-div p {
+	color: hsl(240, 1%, 70%);
+}
+
+.first-div {
+	padding: 30px;
+	width: 100%;
+	height: 45%;
+	background-color: white;
+}
+
+.bottom-section {
+	color: white;
+	width: 100%;
+	height: 55%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.second-div {
+	width: 50%;
+	height: 100%;
+	background-color: hsl(179, 62%, 43%);
+}
+
+.second-div p {
+	padding: 3px;
+}
+.third-div {
+	width: 50%;
+	height: 100%;
+	background-color: hsl(179, 71%, 44%);
+}
+
+.second-div,
+.third-div {
+	padding: 30px;
+}
+
+span {
+	position: relative;
+	top: -3px;
+	left: 7px;
+	font-size: 0.8rem;
+	color: hsl(204, 43%, 93%);
+}
+
+.second-div h3,
+.third-div h3 {
+	padding-bottom: 15px;
+}
+
+button {
+	margin-top: 30px;
+	background-color: hsl(71, 73%, 54%);
+	color: white;
+	border: none;
+	width: 100%;
+	padding: 10px;
+	border-radius: 3px;
+}
+
+button:hover {
+	background-color: hsl(71, 86%, 34%);
+	cursor: pointer;
+}
+
+li {
+	color: hsl(204, 43%, 93%);
+	list-style: none;
+	font-size: 0.8rem;
+	padding: 2px;
+}
+
+strong {
+	font-size: 1.5rem;
+}
+
+@media screen and (max-width: 860px) {
+	* {
+		font-size: 0.95em;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.container {
+		height: 80%;
+		width: 90%;
+	}
+
+	.bottom-section {
+		display: flex;
+		flex-direction: column;
+		height: 66.66%;
+	}
+	.second-div,
+	.third-div {
+		width: 100%;
+	}
+
+	.first-div {
+		height: 33.33%;
+	}
+}
